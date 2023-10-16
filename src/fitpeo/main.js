@@ -13,6 +13,7 @@ export default class Mainelement extends React.Component{
         super();
         this.state={input:""}
         this.handleEvent=this.handleEvent.bind(this);
+        this.slide=this.slide.bind(this);
 
     }
     
@@ -35,11 +36,17 @@ export default class Mainelement extends React.Component{
     
 
     }
+    slide(){
+        
+            document.getElementById("slideleft").style.left="0px";
+        
+    }
   
     render(){
         return (<>
         <div id="layout2">
-        <div id="greeting"><h3>Greetings Fitpeo (●'◡'●),</h3>
+        <div id="greeting">
+        <span id="burger" onClick={this.slide}><i class="fa-solid fa-bars"></i></span><h3>Greetings Fitpeo (●'◡'●),</h3>
                <label><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search" id="search"/></label>
         </div>
         <div id="fourguys">
@@ -73,7 +80,7 @@ export default class Mainelement extends React.Component{
             <div id="customers"><div><h3>Customers</h3>
             <p>Customers that buy products</p></div>
             <div id="circle">
-                <div id="circle1"><div id="circle2"><h6>65% Total New Customers</h6></div></div>
+                <div id="circle1"><div id="circle2"><h6>65% Total New Customers</h6><div id="colordiv"></div></div></div>
                 
             </div>
             </div>

@@ -18,6 +18,7 @@ class Fitpeo extends React.Component{
         super();
         this.state={title:"Dashboard",icon:<i class="fa-solid fa-bars-staggered"></i>}
          this.display=this.display.bind(this);
+         this.slider=this.slider.bind(this);
     }
       display(k,event){
         
@@ -30,15 +31,18 @@ class Fitpeo extends React.Component{
 
         
     }
+    slider(){
+        document.getElementById("slideleft").style.left=  "-120%";
+    }
     
     
     
     render(){
       
         return (<>
-        <div id="layout"><nav>
-            <span></span>
-            <h1 id="topguy"><span>{this.state.icon}</span><span id="tit">{this.state.title}</span>   </h1>
+        <div id="layout"><nav id="slideleft">
+            
+            <h1 id="topguy"><span   onClick={this.slider} style={{cursor:"pointer"}}>{this.state.icon}</span><span id="tit">{this.state.title}</span>   </h1>
             <ul>{menu.map((item,index)=><li   onClick={(event)=>this.display(index,event) } key={index}  ><span >{item.icon}</span> <span  >{item.title}</span> <span>{" >"}</span></li>)}</ul>
             <div id="manager">
                  <div id="pic"> <i class="fa-solid fa-user-tie"></i></div>

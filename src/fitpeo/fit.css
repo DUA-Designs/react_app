@@ -27,6 +27,9 @@ nav{
     align-items: center;
     
 }
+ #burger{
+    display: none;
+}
 nav #topguy{
     color:white;
     margin: 1rem 0;
@@ -299,7 +302,7 @@ padding-left: 5px;
   
     width: 70%;
     border-radius: 50%;
-   
+    overflow: hidden;
     height: 60%;
     margin: auto;
     display: grid;
@@ -308,9 +311,9 @@ padding-left: 5px;
 #twoguys #customers #circle #circle1{
     width: 70%;
     height: 70%;
-   
+     
     border-radius: 50%;
-    
+    overflow: hidden;
     margin: auto;
     display: grid;
     align-items: center;
@@ -322,6 +325,7 @@ padding-left: 5px;
     display: grid;
     text-align: center;
     align-items: center;
+    overflow: hidden;
 
     
     
@@ -331,8 +335,26 @@ padding-left: 5px;
     
     border: 10px solid#e5dfff;
     margin: auto;
+    
 
 }
+#twoguys #customers #circle #circle1 #circle2 h6{
+    margin-bottom: -3vh;
+}
+#twoguys #customers #circle #circle1 #circle2 #colordiv{
+     
+    display: grid;
+  align-items: flex-end;
+  height: 8vh;
+  margin-bottom: -3vh;
+  width: 8vw;
+  font-weight: 200;
+  
+  
+  
+    background-color: #7d5fff;;
+}
+  
  
 
 #oneguy{
@@ -451,6 +473,10 @@ width: 13%;
          
     
     }
+    #twoguys #customers #circle #circle1 #circle2 h6{
+        font-size: 0.456rem;
+        margin-bottom: -5vh;
+    }
     
 }
 @media screen and (max-width:800px){
@@ -468,6 +494,9 @@ width: 13%;
       
          
     
+    }
+    #twoguys #customers #circle #circle1 #circle2 h6{
+        font-size: 0.4rem;
     }
     
 
