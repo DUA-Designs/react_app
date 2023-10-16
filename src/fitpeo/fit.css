@@ -1,0 +1,481 @@
+*{
+    margin:0px;
+    padding:0px;
+    border-radius: 5px;
+    font-family: 'Abel', sans-serif;
+   
+        transition: 0.5s ease;
+     
+}
+#layout{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(231, 227, 227, 0.938);
+}
+nav{
+    border-radius: none !important;
+    padding: 5px;
+  
+    width: 20%;
+    height: 100vh;
+    background-color:#2c2c54;
+    color:white;
+    font-size: 0.8rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+nav #topguy{
+    color:white;
+    margin: 1rem 0;
+    height: 5vh;
+    width: 90%;
+  
+     
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+
+    
+}
+  nav #topguy span:nth-child(2){
+    display: block;
+    width: 83%;
+    
+}
+nav ul{
+height: 40vh;
+width: 90%;
+margin:0 auto;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+ 
+list-style-type: none;
+ 
+
+ 
+}
+nav ul li{
+    opacity: 0.8;
+    width: 100%;
+    height: 5vh;
+    text-align:start;
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    cursor: pointer;
+    color:white
+}
+nav ul li:hover{
+    opacity: 1;
+    background-color: #706fd3;
+    transition: 0.2s  ease-in-out !important;
+
+}
+nav ul li span:nth-child(2){
+    width: 70%;
+}
+#manager{
+   background-color: #706fd3;
+    width: 90%;
+    height:5vh;
+   position:relative;
+   top: 24vh;
+   display: flex;
+   justify-content: space-around;
+   color: white;
+    
+}
+#manager i{
+     
+    color: white;
+    font-size: 1.5rem;
+
+}
+#manager #pic{
+    display: grid;
+    align-items: center;
+}
+#manager #details{width: 50%;
+     
+    display: flex;
+    flex-direction: column;
+     
+    justify-content: space-around;
+    
+
+}
+#manager #details p{
+    font-size: 0.5rem;
+}
+#manager #details   h3{
+    font-size: 0.6rem;
+}
+#layout2{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+}
+#greeting{
+    display: flex;
+    justify-content: space-between;
+   
+
+}#greeting label{
+    display: flex;
+    align-items: center;
+}
+#greeting label i{
+position: absolute;
+opacity: 0.5;
+padding-left: 5px;
+ 
+}
+#fourguys{
+     margin: 2rem 0;
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+#fourguys #box{
+    width: 20%;
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+#fourguys #box #inner-box:nth-child(1){
+    display: grid;
+    align-items: center;
+    width: 35%;
+    height: 50%;
+    border-radius: 50% !important;
+    
+    text-align: center;
+}
+#fourguys #box #inner-box:nth-child(2){
+    display: grid;
+    align-items: center;
+    width:45%;
+    height: 50%;
+  
+}
+#fourguys #box #inner-box h3 {
+    font-size: 1.2rem;
+}
+#fourguys #box #inner-box p {
+    font-size: 0.7rem;
+    font-weight:700;
+    
+}
+#fourguys #box #inner-box p:nth-child(1) {
+    opacity: 0.5;
+    
+}
+#fourguys #box #inner-box p #inc{
+    color: green;
+}
+#fourguys #box #inner-box p #dec{
+    color: red;
+}
+#fourguys #box #inner-box p span i{
+    font-size: 0.8rem;
+}
+#fourguys #box #inner-box:nth-child(1) i{
+    font-size: 2.5em;
+  
+     
+
+}
+#fourguys #box #inner-box:nth-child(1):hover i{
+    animation: wobble 1s infinite;
+
+}
+@keyframes wobble{
+    10%{transform: translateX(3px) rotateZ(1deg);}
+    20%{transform: translateX(-3px) rotateZ(-1deg);}
+    30%{transform: translateX(3px) rotateZ(1deg);}
+    40%{transform: translateX(-3px) rotateZ(-1deg);}
+    50%{transform: translateX(3px) rotateZ(1deg);}
+    60%{transform: translateX(-3px) rotateZ(-1deg);}
+    70%{transform: translateX(3px) rotateZ(1deg);}
+    80%{transform: translateX(-3px) rotateZ(-1deg);}
+    90%{transform: translateX(3px) rotateZ(1deg);}
+    100%{transform: translateX(-3px) rotateZ(-1deg);}
+     
+  }
+#twoguys{
+   
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+     
+}
+#twoguys  p{
+    opacity: 0.5;
+    font-size:0.8rem;
+}
+#twoguys h3{
+    font-size: 1.5rem;
+}
+#twoguys #overview{
+    padding: 10px;
+ 
+    
+    width: 70%;
+    height: 100%;
+    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+#twoguys #overview #bars {
+    display: flex;
+    justify-content: space-around;
+    
+    height: 33vh ;
+}
+#twoguys #overview #bars .bar{
+    width: 3.5vw;
+    height: 25vh;
+   
+    
+    display: grid;
+    align-items: flex-end;
+}
+#twoguys #overview #bars .bar div{
+    width: 100%;
+    background-color: #7d5fff;
+   height: 2vh;
+   opacity: 0.2;
+   
+     
+
+
+    
+
+}
+#twoguys #overview #bars #add{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#twoguys #overview #bars #month{
+     
+    width: 100%;
+    height: 3vh;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+#twoguys #customers{
+    padding: 10px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+   
+    background-color: white;
+
+}
+#twoguys #overview #info{
+    display: flex;
+    justify-content: space-between;
+}
+#twoguys #customers #circle{
+    background-color: rgba(241, 239, 239, 0.815);
+  
+    width: 70%;
+    border-radius: 50%;
+   
+    height: 60%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+#twoguys #customers #circle #circle1{
+    width: 70%;
+    height: 70%;
+   
+    border-radius: 50%;
+    
+    margin: auto;
+    display: grid;
+    align-items: center;
+
+}
+#twoguys #customers #circle #circle1 #circle2{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+
+    
+    
+     
+   
+    border-radius: 50%;
+    
+    border: 10px solid#e5dfff;
+    margin: auto;
+
+}
+ 
+
+#oneguy{
+    margin: 3rem 0;
+    background-color:white;
+    padding:10px;
+    
+}
+ 
+#oneguy #product{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+#oneguy #product #box1 {
+   
+    width: 60%;
+   
+}
+#oneguy #product #search{
+     display: grid;
+     align-items: center;
+    width: 20%;
+     
+}
+#oneguy #product #search label {
+    display: flex;align-items: center;
+ 
+}
+#oneguy #product #search label i{
+    position: absolute;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+#oneguy #product #option{
+    display: grid;
+    align-items: center;
+width: 13%;
+}
+#oneguy #product #option select{
+    width: 60%;
+    }
+    #oneguy #container{
+        margin: 1rem 0;
+    }
+#oneguy #container #cols,#rows{
+     
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-bottom: 10px;
+}
+#oneguy #container #rows{
+    padding: 5px 0;
+    border:none;
+}
+#oneguy #container #cols  #name p{
+    font-size: 0.7rem;
+}
+#oneguy #container #cols  #list{
+    width: 35%;
+}
+#oneguy #container #cols  #list ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+#oneguy #container #cols #list ul li{
+    font-size: 0.7rem;
+}
+#oneguy #container #rows  #name p{
+    font-size: 1.2rem;
+}
+#oneguy #container #rows  #list{
+    width: 35%;
+}
+#oneguy #container #rows  #list ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+#oneguy #container #rows #list ul li{
+    font-size: 1.2rem;
+}
+ 
+ 
+
+ #sel,#search{
+    height: 20px;
+    border: none !important;
+    padding: 2px;
+    text-align:  center;
+    
+ }
+ @media screen and (max-width:900px) {
+     
+
+    
+    #fourguys #box #inner-box:nth-child(2) h3 {
+        font-size: 1rem;
+    }
+    #fourguys #box  #inner-box:nth-child(2)  p {
+        font-size: 0.7rem;
+        font-weight:500;
+        
+    }
+    #fourguys #box #inner-box:nth-child(1) i{
+        font-size: 1.5em;
+      
+         
+    
+    }
+    
+}
+@media screen and (max-width:800px){
+    #manager #details p{
+        font-size: 0.4rem;
+    }
+    #manager #details   h3{
+        font-size: 0.5rem;
+    }
+    #manager i{
+        font-size: 0.9rem;
+    }
+    #fourguys #box #inner-box:nth-child(1) i{
+        font-size: 1em;
+      
+         
+    
+    }
+    
+
+}
+ 
+@media screen and (max-width:500px) {
+    #layout{
+        display: grid;
+    }
+    
+}

@@ -1,0 +1,210 @@
+@media screen and (max-width:500px) {
+    #layout{
+        display: grid;
+        
+       
+         
+     
+    }
+    #layout nav{
+       left: -120%;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    #layout nav h1{
+        font-size: 0.7rem;
+        
+    }
+    #layout nav ul li{
+           font-size:0.5rem ;
+    }
+    #layout #manager i{
+     
+         
+        font-size: 0.7rem;
+    
+    }
+    #layout #manager #details p{
+        font-size: 0.2rem;
+    }
+    #layout #manager #details  h3{
+        font-size: 0.3rem;
+    }
+     #greeting h3{
+
+        font-size: 0.5rem;
+    }
+    #greeting {
+        justify-content: space-around;
+        width: 47vw;
+        margin: 0 auto;
+        
+    }
+      #greeting label #search{
+        height: 5px;
+          width: 80%;
+          font-size: 0.5rem;
+    }
+    #greeting label i{
+        font-size: 0.5rem;
+    }
+    #layout #layout2{
+        width: 80vw;
+        height: 100vh;
+        padding: 1rem;
+    }
+    #layout #layout2 #fourguys  {
+        margin: 2rem auto;
+        
+        display: grid;
+        gap: 1rem;
+       
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        
+    }
+    #layout #layout2 #fourguys #box{
+
+        width: 100%;
+        height: 25vh;
+       
+    }
+    #layout #layout2 #fourguys #box #inner-box h3 {
+        font-size: 0.6rem;
+    }
+    #layout #layout2 #fourguys #box #inner-box p {
+        font-size: 0.5rem;
+        font-weight:700;
+        
+    }
+    #layout #layout2 #fourguys #box #inner-box p span i{
+        font-size: 0.5rem;
+    }
+
+
+    #layout #layout2 #twoguys #overview #bars #month{
+        font-size: 0.3rem;
+    }
+    #layout #layout2 #twoguys {
+        background-color: rgba(231, 227, 227, 0.938);
+        
+        height: 80vh;
+        display: grid;
+        margin: 1rem auto;
+       width:146%;
+       position: relative;
+       left: -100px;
+        
+       align-items: center;
+       
+      
+        
+      
+        
+    }
+    #layout #layout2  #twoguys #overview{
+        height: fit-content;
+        padding: 3px;
+        width: 150%;
+        
+        transform: translateX(190px);
+        
+        
+         
+    }
+    #layout #layout2 #twoguys #overview #bars .bar{
+        width: 0.7rem;
+    }
+     
+     
+    #layout #layout2  #twoguys #overview h3{
+            font-size: 0.5rem;
+
+    }
+    #layout #layout2  #twoguys #overview p{
+            font-size: 0.4rem;
+
+     }
+     #layout #layout2  #twoguys #overview #sel{
+        font-size: 0.5rem;
+     }
+     
+    #layout #layout2 #twoguys #customers{
+             
+        transform: translateX(230px);
+             height:20vh ;
+             width: 50%;
+           
+               
+             
+               margin: 5px auto;
+    }
+        #layout #layout2 #twoguys #customers h3 {
+              font-size: 0.5rem;
+    }
+        #layout #layout2 #twoguys #customers p{
+            font-size: 0.4rem;
+    }
+
+    #layout #layout2 #oneguy{
+        
+        background-color:   rgba(231, 227, 227, 0.938);
+        padding:4px;
+          width:101vw;
+          margin: -5%;
+          margin-left: -10vh;
+
+      
+        
+    }
+    #layout #layout2 #oneguy #product{
+        width:40%;
+        margin: 10px auto;
+
+
+    }
+    #layout #layout2 #oneguy #product h3{
+        font-size: 0.5rem;
+    }
+    #layout #layout2  #oneguy #product #search{
+        height: 5px;
+        font-size: 0.5rem;
+        width: 30%;
+       
+        
+       
+        
+    }
+    #layout #layout2  #oneguy #product #option{
+        width: 40%;
+       
+    }
+    #layout #layout2  #oneguy #product #option select{
+        width: 70%;
+        font-size: 0.4rem;
+
+        
+        }
+
+    #layout #layout2  #oneguy #container{
+        width:40%;
+        margin: 0 auto;
+    }
+    #layout #layout2  #oneguy #container #cols  #name p{
+        font-size: 0.5rem;
+    }
+    #layout #layout2  #oneguy #container #cols #list ul li{
+        font-size: 0.4rem;
+    }
+    #layout #layout2 #oneguy #container #rows  #name p{
+        font-size: 0.5rem;
+    }
+    #layout #layout2  #oneguy #container #rows #list ul li{
+        font-size: 0.5rem;
+    }
+    
+     
+    
+}
